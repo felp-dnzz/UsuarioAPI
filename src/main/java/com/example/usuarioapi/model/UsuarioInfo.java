@@ -10,18 +10,17 @@ import java.time.LocalDate;
 @Entity
 public class UsuarioInfo {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer usuarioid;
+    private Integer usuarioId;
     private String nome;
     private String email;
-    private LocalDate datanascimento;
+    private LocalDate dataNascimento;
 
-    public Integer getUsuarioid() {
-        return usuarioid;
+    public Integer getUsuarioId() {
+        return usuarioId;
     }
 
-    public void setUsuarioid(Integer usuarioid) {
-        this.usuarioid = usuarioid;
+    public void setUsuarioId(Integer usuarioId) {
+        this.usuarioId = usuarioId;
     }
 
     public String getNome() {
@@ -40,11 +39,11 @@ public class UsuarioInfo {
         this.email = email;
     }
 
-    public LocalDate getDatanascimento() {
-        return datanascimento;
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setDatanascimento(LocalDate datanascimento) {
-        this.datanascimento = datanascimento;
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 }
