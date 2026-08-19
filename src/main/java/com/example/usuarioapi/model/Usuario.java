@@ -10,12 +10,6 @@ public class Usuario {
     private String cpf;
     private String senha;
 
-    public Usuario(Integer id, String cpf, String senha){
-        this.id = id;
-        this.cpf = cpf;
-        this.senha = senha;
-    }
-
     public Integer getId() {
         return id;
     }
