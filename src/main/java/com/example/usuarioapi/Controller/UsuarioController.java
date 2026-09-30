@@ -31,7 +31,8 @@ public class UsuarioController {
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable int id){
+    public ResponseEntity<String> delete(@PathVariable int id){
         usuarioService.delete(id);
+        return ResponseEntity.ok("a");
     }
 }

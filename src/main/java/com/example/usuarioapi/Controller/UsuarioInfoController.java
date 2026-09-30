@@ -32,7 +32,8 @@ public class UsuarioInfoController {
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable int id){
+    public ResponseEntity<String> delete(@PathVariable int id){
         usuarioInfoService.delete(id);
+        return ResponseEntity.ok("a");
     }
 }

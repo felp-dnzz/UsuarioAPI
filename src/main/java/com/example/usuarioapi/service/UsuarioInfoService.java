@@ -1,7 +1,9 @@
 package com.example.usuarioapi.service;
 
+import com.example.usuarioapi.model.Usuario;
 import com.example.usuarioapi.model.UsuarioInfo;
 import com.example.usuarioapi.repository.UsuarioInfoRepository;
+import com.example.usuarioapi.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +15,8 @@ public class UsuarioInfoService {
     @Autowired
 
     private UsuarioInfoRepository usuarioInfoRepository;
+    @Autowired
+    private UsuarioRepository usuarioRepository;
 
     public UsuarioInfo findById(int id){
         Optional<UsuarioInfo> usuarioInfo = usuarioInfoRepository.findById(id);
